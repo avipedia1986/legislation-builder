@@ -2,6 +2,9 @@
  * Globals
  */
 
+/* Try to keep spans on one line */
+span { display: inline-block; }
+
 /* Links */
 a,
 a:focus,
@@ -9,16 +12,16 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
+/* Custom default button 
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
+  text-shadow: none; /* Prevent inheritence from `body` 
   background-color: #fff;
   border: 1px solid #fff;
 }
-
+*/
 
 /*
  * Base structure
@@ -32,7 +35,11 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,.75);
+  background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -78,7 +85,7 @@ body {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
